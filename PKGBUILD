@@ -58,7 +58,10 @@ sha256sums=(
 prepare() {
   local \
     _patch
-  printf '%s\n' "v${pkgver}" > "${pkgname}-${pkgver}/version.txt"
+  printf \
+    '%s\n' \
+    "v${pkgver}" > \
+    "${pkgname}-${pkgver}/version.txt"
   for _patch in "${_patches[@]}"; do
     patch \
       -d \
