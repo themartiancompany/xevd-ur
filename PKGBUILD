@@ -46,7 +46,7 @@ _patches=(
   "020-${_pkg}-fix-pkg-config.patch"
 )
 source=(
-  "${_http}/archive/v${pkgver}/${_tarname}.tar.gz"
+  "${url}/archive/v${pkgver}/${_tarname}.tar.gz"
   "${_patches[@]}"
 )
 sha256sums=(
